@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+body {
+  background-color: #eee;
+  font-family: cairo;
+  font-weight: 600;
+}
+
+.container {
+  @include container;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  font-size: 30px;
+  color: $mainColor;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    height: 2px;
+    background-color: $mainColor;
+  }
+  &::before {
+    right: -85px;
+  }
+  &::after {
+    left: -85px;
+  }
+}
+
+.section-desc {
+  text-align: center;
+  font-size: 18px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,59 @@
+header {
+  background-color: #fff;
+  height: 60px;
+  @include flexbox();
+
+  nav {
+  // @include flexbox(space-between, center, row);
+  @include flexbox(space-between);
+  @include container;
+
+  ul {
+    list-style: none;
+    display: none;
+    @include media-up(md) {
+      @include flexbox();
+      gap: 20px;
+    }
+
+    li {
+
+      a {
+        text-decoration: none;
+        color: $secondaryColor;
+        font-weight: bold;
+
+        &:hover {
+          color: $mainColor;
+        }
+      }
+    }
+  }
+
+  .icons {
+    display: none;
+    @include media-up(md) {
+      display: flex;
+      gap: 15px;
+    }
+
+    a {
+      color: $AccentColor;
+      &:hover {
+        color: $hoverColor;
+      }
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .mob-nav-icon {
+    cursor: pointer;
+    display: flex;
+    @include media-up(md) {
+      display: none;
+    }
+  }
+ }
+}

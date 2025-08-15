@@ -1,0 +1,29 @@
+1- npm init -y
+2- npm install sass
+
+3-
+بنية المشروع
+:
+index.html
+assets folder
+scss folder 
+
+4- In package.json add:
+"scripts": {
+    "sass": "sass --watch scss/style.scss:assets/css/style.css"
+  }
+
+  5- In terminal write: npm run sass
+
+https://wallsproperty.netlify.app/
+https://demo.themeim.com/html/palace/property-detail.html
+
+Libraries:
+https://fancyapps.com/
+https://fancyapps.com/fancybox/get-started/installation/
+
+Gallery Section:
+add property filters
+imagges overlay
+
+https://qoshan.com/property/%D9%81%D9%84%D9%84-%D9%85%D9%85%D9%8A%D8%B2%D8%A9-%D9%88%D8%B0%D8%A7%D8%AA-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%AD%D8%AF%D9%8A%D8%AB-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-%D9%81%D9%8A-%D8%AF%D8%A7%D8%A8%D9%88/
