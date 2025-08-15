@@ -676,6 +676,12 @@ aside .mobile-menu .cta {
 }
 
 /* End About */
+/*Start Properties*/
+.properties .property .info .location {
+  color: #242424;
+}
+
+/*End Properties*/
 .testimonials .all-testimonials {
   margin-top: 60px;
   display: grid;
@@ -842,6 +848,9 @@ aside .mobile-menu .cta {
 .blog .all-blogs .blog-card .info .blog-footer .author {
   display: flex;
   align-items: center;
+}
+.blog .all-blogs .blog-card .info .blog-footer .author span {
+  color: #a38344;
 }
 .blog .all-blogs .blog-card .info .blog-footer .author .author-img {
   margin-right: 15px;

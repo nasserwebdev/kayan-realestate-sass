@@ -161,6 +161,18 @@
 }
 /* End About */
 
+/*Start Properties*/
+.properties {
+  .property {
+    .info {
+      .location {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+/*End Properties*/
+
 .testimonials {
   .all-testimonials {
     margin-top: 60px;
@@ -354,6 +366,9 @@
           .author {
             display: flex;
             align-items: center;
+            span {
+              color: $mainColor;
+            }
             .author-img {
               margin-right: 15px;
               width: 70px;

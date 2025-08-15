@@ -27,3 +27,10 @@ add property filters
 imagges overlay
 
 https://qoshan.com/property/%D9%81%D9%84%D9%84-%D9%85%D9%85%D9%8A%D8%B2%D8%A9-%D9%88%D8%B0%D8%A7%D8%AA-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%AD%D8%AF%D9%8A%D8%AB-%D9%84%D9%84%D8%A8%D9%8A%D8%B9-%D9%81%D9%8A-%D8%AF%D8%A7%D8%A8%D9%88/
+
+Updates:
+README file
+Style: Featured Properties Section span.location color
+Style: Blog Section ->  Author text color
+Index -> Blog Section: Added 3 articles
+
