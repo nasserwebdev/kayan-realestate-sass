@@ -63,8 +63,15 @@
       }
       .description {
         p {
+          margin-top: 15px;
           margin-bottom: 15px;
           font-size: 18px;
+        }
+        ul {
+          list-style: disc;
+          li {
+            margin-right: 20px;
+          }
         }
       }
       section {
@@ -190,6 +197,21 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+      }
+      .section-video {
+        .img-video {
+          position: relative;
+         a {
+           i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: $whiteColor;
+          }
+         }
         }
       }
       form {

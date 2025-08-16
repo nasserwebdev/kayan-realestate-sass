@@ -939,8 +939,15 @@ aside .mobile-menu .cta {
   color: #a38344;
 }
 .page-content .inner-content .right-section .description p {
+  margin-top: 15px;
   margin-bottom: 15px;
   font-size: 18px;
+}
+.page-content .inner-content .right-section .description ul {
+  list-style: disc;
+}
+.page-content .inner-content .right-section .description ul li {
+  margin-right: 20px;
 }
 .page-content .inner-content .right-section section {
   padding-top: 0;
@@ -1066,6 +1073,17 @@ aside .mobile-menu .cta {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.page-content .inner-content .right-section .section-video .img-video {
+  position: relative;
+}
+.page-content .inner-content .right-section .section-video .img-video a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #fff;
 }
 .page-content .inner-content .right-section form {
   width: 100%;
