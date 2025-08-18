@@ -18,6 +18,11 @@
     @content;
   }
 }
+@mixin media-down($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
 
 @mixin flexbox ($justify-content:center, $align-items:center, $flex-direction:row) {
   display: flex;

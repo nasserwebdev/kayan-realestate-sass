@@ -29,6 +29,10 @@
   @include media-up(md) {
     height: calc(100vh - 60px);
   }
+  @include media-down(md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   @include bg-img(url('../../assets/images/hero-bg.jpg'));
   .overlay {
     @include overlay(rgba(0,0,0,.7));

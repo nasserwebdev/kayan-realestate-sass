@@ -528,6 +528,12 @@ aside .mobile-menu .cta {
     height: calc(100vh - 60px);
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .hero .overlay {
   position: absolute;
   top: 0;
