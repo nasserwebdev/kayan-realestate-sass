@@ -913,7 +913,7 @@ aside .mobile-menu .cta {
 }
 .page-content .inner-content {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 .page-content .inner-content .right-section {
   width: 70%;
@@ -1122,6 +1122,95 @@ aside .mobile-menu .cta {
 }
 .page-content .inner-content .right-section form textarea:focus {
   outline: 1px solid #e3e2e2;
+}
+.page-content .inner-content .left-section {
+  width: 30%;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 25px;
+  position: sticky;
+  top: 0;
+}
+.page-content .inner-content .left-section .inner-sections section {
+  padding: 0;
+}
+.page-content .inner-content .left-section .inner-sections section h3 {
+  color: #a38344;
+}
+.page-content .inner-content .left-section .inner-sections hr {
+  height: 1px;
+  border: none;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+.page-content .inner-content .left-section .inner-sections .sec-form input, .page-content .inner-content .left-section .inner-sections .sec-form textarea, .page-content .inner-content .left-section .inner-sections .sec-form select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d4d2d2;
+  caret-color: #a38344;
+}
+.page-content .inner-content .left-section .inner-sections .sec-form input:focus, .page-content .inner-content .left-section .inner-sections .sec-form textarea:focus, .page-content .inner-content .left-section .inner-sections .sec-form select:focus {
+  outline: 1px solid #d4d2d2;
+}
+.page-content .inner-content .left-section .inner-sections .sec-form input, .page-content .inner-content .left-section .inner-sections .sec-form select {
+  height: 40px;
+}
+.page-content .inner-content .left-section .inner-sections .sec-form textarea {
+  height: 100px;
+  line-height: 1.8em;
+}
+.page-content .inner-content .left-section .inner-sections .sec-form button {
+  width: 100%;
+}
+.page-content .inner-content .left-section .inner-sections .sec-featured .featured-properties .property {
+  border: 1px solid #a38344;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+.page-content .inner-content .left-section .inner-sections .sec-featured .featured-properties .property .property-image {
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.page-content .inner-content .left-section .inner-sections .sec-featured .featured-properties .property .property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-content .inner-content .left-section .inner-sections .sec-featured .featured-properties .property .property-info {
+  margin-top: 15px;
+  padding: 20px;
+}
+.page-content .inner-content .left-section .inner-sections .sec-featured .featured-properties .property .property-info h4 {
+  line-height: 1.5;
+}
+.page-content .inner-content .left-section .inner-sections .sec-featured .featured-properties .property .property-info h4 a {
+  color: #242424;
+}
+.page-content .inner-content .left-section .inner-sections .sec-featured .featured-properties .property .property-info .features {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+.page-content .inner-content .left-section .inner-sections .sec-cat .prop-cats {
+  margin-top: 15px;
+}
+.page-content .inner-content .left-section .inner-sections .sec-cat .prop-cats li {
+  background-color: #eee;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 13px;
+}
+.page-content .inner-content .left-section .inner-sections .sec-cat .prop-cats li a {
+  color: #242424;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
