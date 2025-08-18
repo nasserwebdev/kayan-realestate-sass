@@ -3,7 +3,7 @@ let aside = document.getElementById('aside');
 
 mobNavIcon.addEventListener('click', function () {
   if (aside.style.right === '0px') {
-    aside.style.right = '-250px';
+    aside.style.right = '-300px';
   } else {
     aside.style.right = '0px';
   }
@@ -11,7 +11,7 @@ mobNavIcon.addEventListener('click', function () {
 
 document.addEventListener('click', function(e) {
   if (!aside.contains(e.target) && e.target !== mobNavIcon) {
-    aside.style.right = '-250px';
+    aside.style.right = '-300px';
   }
 });
 
