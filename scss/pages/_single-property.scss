@@ -1,11 +1,19 @@
 .page-header {
   padding: 60px 0;
   background-color: $mainColor;
+  @include media-down(md) {
+    padding: 30px 0;
+  }
 
  .ph-hero {
   @include flexbox(center, center, column);
    h1 {
     color: $whiteColor;
+    @include media-down(md) {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
   }
   .breadcrumb {
     @include flexbox(flex-start);
@@ -14,6 +22,9 @@
     li {
       position: relative;
       color: $whiteColor;
+      @include media-down(md) {
+          font-size: 13px;
+        }
       &:first-child::before {
         content: '';
         position: absolute;
@@ -23,9 +34,13 @@
         width: 10px;
         height: 2px;
         background-color: $whiteColor;
+         
       }
       a {
         color: $whiteColor;
+        @include media-down(md) {
+          font-size: 13px;
+        }
       }
     }
   }
@@ -35,11 +50,18 @@
 .page-content {
   margin-top: 60px;
   margin-bottom: 60px;
+  @include media-down(md) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
   .inner-content {
     display: flex;
     gap: 30px;
     .right-section {
       width: 70%;
+      @include media-down(md) {
+        width: 100%;
+      }
       border-radius: 6px;
       background-color: $whiteColor;
       padding: 15px;
@@ -49,6 +71,9 @@
         height: 500px;
         border-radius: 6px;
         overflow: hidden;
+        @include media-down(md) {
+          height: 350px;
+        }
         img {
           width: 100%;
           height: 100%;
@@ -60,17 +85,27 @@
         margin-bottom: 20px;
         font-size: 28px;
         color: $mainColor;
+        @include media-down(md) {
+          font-size: 20px;
+          line-height: 1.5;
+        }
       }
       .description {
         p {
           margin-top: 15px;
           margin-bottom: 15px;
           font-size: 18px;
+          @include media-down(md) {
+            font-size: 15px;
+          }
         }
         ul {
           list-style: disc;
           li {
             margin-right: 20px;
+            @include media-down(md) {
+            font-size: 15px;
+          }
           }
         }
       }
@@ -83,21 +118,40 @@
         background-color: #f0f0f0;
         padding: 20px;
         border-radius: 6px;
+        @include media-down(md) {
+          flex-direction: column;
+          gap: 20px;
+        }
         div:first-child {
           border-left: 1px solid #ccc;
+          @include media-down(md) {
+            border-left: none;
+          }
         }
         div {
           width: 50%;
           padding-right: 20px;
+          @include media-down(md) {
+            box-shadow: 0 0 2px #000000a2;
+            border-radius: 6px;
+            width: 100%;
+          }
           ul {
             li {
               margin-bottom: 20px;
               position: relative;
+              @include media-down(md) {
+                font-size: 15px;
+              }
               &::after {
                 content: ':';
                 position: absolute;
+                top: 50%;
                 right: 50%;
                 font-size: 20px;
+                @include media-down(md) {
+                  top: 0;
+                }
               }
               span {
                 position: absolute;
@@ -113,9 +167,15 @@
         border-radius: 6px;
         display: flex;
         gap: 20px;
+        @include media-down(md) {
+          flex-direction: column;
+        }
 
         .box {
           width: 33%;
+          @include media-down(md) {
+            width: 100%;
+          }
           background-color: $whiteColor;
           padding: 15px;
           border-radius: 6px;
@@ -148,6 +208,9 @@
         border-radius: 6px;
         overflow: hidden;
         @include flexbox();
+        @include media-down(md) {
+          height: 250px;
+        }
         img {
           width: 60%;
           object-fit: cover;
@@ -155,6 +218,15 @@
       }
       .arrow {
         color: $mainColor;
+        }
+      .swiper-button-prev:after, .swiper-button-next:after {
+        font-size: 30px;
+        @include media-down(md) {
+        font-size: 25px;
+        }
+      }
+      .swiper-pagination-bullet-active {
+          background-color: $mainColor !important;
       }
       .amenities {
         background-color: #f0f0f0;
@@ -163,8 +235,17 @@
         display: flex;
         gap: 15px;
         margin-top: 20px;
+        @include media-down(md) {
+          flex-direction: column;
+        }
         .box {
           width: 33%;
+          @include media-down(md) {
+            width: 100%;
+            box-shadow: 0 0 2px #00000088;
+            padding: 20px;
+            border-radius: 6px;
+          }
           ul {
             li {
               margin-bottom: 15px;
@@ -199,6 +280,13 @@
           object-fit: cover;
         }
       }
+      .section-map {
+        iframe {
+          @include media-down(md) {
+            height: 300px;
+          }
+        }
+      }
       .section-video {
         .img-video {
           position: relative;
@@ -210,6 +298,11 @@
             transform: translate(-50%, -50%);
             font-size: 40px;
             color: $whiteColor;
+          }
+          img {
+            @include media-down(md) {
+              height: 300px;
+            }
           }
          }
         }
@@ -223,6 +316,10 @@
         .inputs-info {
           display: flex;
           gap: 15px;
+          @include media-down(md) {
+            flex-direction: column;
+            gap: 7px;
+          }
           div {
             width: 100%;
           input {
@@ -262,6 +359,9 @@
       padding: 25px;
       position: sticky;
       top: 0;
+      @include media-down(md) {
+        display: none;
+      }
       .inner-sections {
         section {
         padding: 0;
