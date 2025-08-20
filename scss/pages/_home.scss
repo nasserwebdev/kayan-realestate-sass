@@ -106,6 +106,7 @@
 
 /* Start About */
 .about {
+  padding-top: 20px;
    .inner-about {
     @include media-up(md) {
       @include flexbox(center, center, row);
@@ -185,6 +186,9 @@
     gap: 30px;
 
     .box {
+      @include media-down(md) {
+        width: 97%;
+      }
       position: relative;
       background-color: $whiteColor;
       border-radius: 8px;
@@ -247,6 +251,9 @@
     .image {
       border-radius: 10px;
       overflow: hidden;
+      @include media-down(md) {
+        width: 97%;
+      }
       height: 234px;
       position: relative;
       cursor: pointer;
@@ -313,7 +320,7 @@
    background-color: $whiteColor;
   .all-blogs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
     gap: 30px;
 
     .blog-card {
@@ -329,7 +336,6 @@
 
       .image {
         position: relative;
-        width: 100%;
         height: 250px;
         .blog-category {
           position: absolute;
@@ -394,4 +400,3 @@
     }
   }
 }
-

@@ -32,6 +32,10 @@ img {
 section {
   padding-top: 50px;
   padding-bottom: 50px;
+  @include media-down(md) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .section-title {
@@ -41,7 +45,8 @@ section {
   width: fit-content;
   margin: auto;
   position: relative;
-  &::before,
+  @include media-up(md) {
+     &::before,
   &::after {
     content: '';
     position: absolute;
@@ -55,6 +60,7 @@ section {
   }
   &::after {
     left: -85px;
+  }
   }
 }
 

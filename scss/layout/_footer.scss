@@ -20,17 +20,31 @@
       justify-content: center;
       align-items: center;
       gap: 15px;
+      @include media-down(md) {
+        justify-content: flex-end;
+      }
+      div {
+        h5, a {
+          font-size: 14px;
+        }
+      }
       a {
         color: #858484;
         i {
           font-size: 40px;
           color: $mainColor;
+          @include media-down(md) {
+            font-size: 25px;
+          }
         }
       }
     }
     div:nth-child(2) {
       border-right: 1px solid #b4b4b4;
       border-left: 1px solid #b4b4b4;
+      @include media-down(md) {
+        border: none;
+      }
     }
   }
   .inner-footer {
